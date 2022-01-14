@@ -175,5 +175,5 @@ class Download(QThread):#videoyu indirmemizi sağlar
         self.isim = re.sub('[^A-Za-z0-9]+', '', self.video.title)+".mp4"
     def run(self):
         if self.tur == "mp4":
-            self.video.streams.filter(resolution="144p", mime_type="video/mp4").first().download(self.yol,filename=self.isim)
+            self.video.streams.filter(resolution="720p", mime_type="video/mp4").first().download(self.yol,filename=self.isim)
         self.authResult.emit(self.isim)

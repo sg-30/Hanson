@@ -12,7 +12,7 @@ class Ui_Dialog(object):#yüklenme ekranı
 		self.widget.setObjectName("widget")
 		self.girisResim = QtWidgets.QLabel(self.widget)
 		self.girisResim.setGeometry(QtCore.QRect(440, 110, 411, 391))
-		self.movie=QtGui.QMovie("../python arayuz/images/yukleme.gif",QtCore.QByteArray())
+		self.movie=QtGui.QMovie("images/yukleme.gif",QtCore.QByteArray())
 		self.girisResim.setMovie(self.movie)
 		self.movie.start()
 		self.girisResim.setScaledContents(True)

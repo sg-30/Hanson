@@ -49,7 +49,7 @@ class Ui_anasayfa_ekran_hanson(QtWidgets.QWidget):
 		self.Anasayfa_Resim = QtWidgets.QLabel(self)
 		self.Anasayfa_Resim.setGeometry(QtCore.QRect(315, 100, 300, 280))
 		self.Anasayfa_Resim.setText("")
-		self.movie=QtGui.QMovie("../python arayuz/images/Hanson.gif",QtCore.QByteArray())
+		self.movie=QtGui.QMovie("images/Hanson.gif",QtCore.QByteArray())
 		self.Anasayfa_Resim.setMovie(self.movie)
 		self.movie.start()
 		self.Anasayfa_Resim.setScaledContents(True)
@@ -209,7 +209,7 @@ class Ui_anasayfa_ekran_hanson(QtWidgets.QWidget):
 
 	def screenshot(self):#ekran fotoğrafı alır
 		img = pyautogui.screenshot()
-		img.save("C:/Users/Egroses/Desktop/Oyun dosyası/screenshot.png")
+		img.save("../screenshot.png")
 																										
 	def konustur(self):#Hanson ile iletişimi başlatır
 		self.wishme()
@@ -236,13 +236,6 @@ class Ui_anasayfa_ekran_hanson(QtWidgets.QWidget):
 				self.speak("vikipedyaya göre..")
 				print(result)
 				self.speak(result)
-
-			elif "site bul" in query:#site araştırır
-				self.bulundu=1
-				self.speak("araştırmamı istersiniz")
-				chromepath = "C:/Program Files/Google/Chrome/Application/chrome.exe %s"
-				search = self.TakeCommand().lower()
-				wb.get(chromepath).open_new_tab(search)
 			
 			elif "youtube'da araştır" in query:#youtube da video başlığı aratır
 				self.bulundu=1

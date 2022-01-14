@@ -44,7 +44,7 @@ class LoadingScreen(QMainWindow):#yüklenme ekranımız
 		self.timer = QTimer()
 		self.timer.timeout.connect(self.loading)
 		self.timer.start(10)#dolum barının dolma süresini ayarlar
-		self.setWindowIcon(QIcon('../python arayuz/images/Logo.ico'))
+		self.setWindowIcon(QIcon('images/Logo.ico'))
 
 	def loading(self):#dolum barı %100 olana kadar güncellemek için
 		self.ui.loadingbar.setValue(self.counter)
@@ -62,14 +62,14 @@ class genelEkranim(QMainWindow):#anasayfa ekranı
 		super(genelEkranim,self).__init__()
 		self.ui=Ui_MainWindow()
 		self.ui.setupUi(self)
-		self.setWindowIcon(QIcon('../python arayuz/images/Logo.ico'))
+		self.setWindowIcon(QIcon('images/Logo.ico'))
 		self.setWindowTitle("Hanson")
 
 
 
 loading = LoadingScreen()
 widget.addWidget(loading)
-widget.setWindowIcon(QIcon('../python arayuz/images/Logo.ico'))
+widget.setWindowIcon(QIcon('images/Logo.ico'))
 widget.setWindowTitle("Hanson")
 widget.setFixedWidth(1280)
 widget.setFixedHeight(800)

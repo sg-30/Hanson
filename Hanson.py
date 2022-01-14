@@ -20,7 +20,7 @@ class Ui_MainWindow(object):#Anasayfa
 		MainWindow.resize(1280, 800)
 		MainWindow.setMinimumSize(1280,800)
 		MainWindow.setMaximumSize(1280,800)
-		MainWindow.setWindowIcon(QtGui.QIcon('../python arayuz/images/Logo.ico'))
+		MainWindow.setWindowIcon(QtGui.QIcon('images/Logo.ico'))
 
 		self.centralwidget = QtWidgets.QWidget(MainWindow)
 		self.centralwidget.setObjectName("centralwidget")
@@ -29,7 +29,7 @@ class Ui_MainWindow(object):#Anasayfa
 
 		self.widget.setStyleSheet("QWidget#widget{\n"
 				
-		"	background-image: url('../python arayuz/images/blue1.jpg');\n"
+		"	background-image: url('images/blue1.jpg');\n"
 		"	\n"
 		"}\n"
 		"#Anasayfa_Button,#Qr_Button,#Oyun_Button,#Notlarim_Button,#Youtube_Button{\n"
@@ -93,7 +93,7 @@ class Ui_MainWindow(object):#Anasayfa
 		self.qr_with_cam.setStyleSheet("  border: 2px solid blue;\n""background-color: rgb(120, 255, 176);\n""  border-radius: 60px;")
 		self.qr_with_cam.setText("")
 		icon = QtGui.QIcon()
-		icon.addPixmap(QtGui.QPixmap("../python arayuz/images/pixlr-bg-result.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+		icon.addPixmap(QtGui.QPixmap("images/pixlr-bg-result.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
 		self.qr_with_cam.setIcon(icon)
 		self.qr_with_cam.setIconSize(QtCore.QSize(300, 200))
 		self.qr_with_cam.setObjectName("qr_with_cam")
@@ -117,7 +117,7 @@ class Ui_MainWindow(object):#Anasayfa
 		self.qr_with_ss.setStyleSheet("  border: 2px solid blue;\n""background-color: rgb(120, 255, 176);\n""  border-radius: 60px;")
 		self.qr_with_ss.setText("")
 		icon1 = QtGui.QIcon()
-		icon1.addPixmap(QtGui.QPixmap("../python arayuz/images/select_area.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+		icon1.addPixmap(QtGui.QPixmap("images/select_area.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
 		self.qr_with_ss.setIcon(icon1)
 		self.qr_with_ss.setIconSize(QtCore.QSize(300, 200))
 		self.qr_with_ss.setObjectName("qr_with_ss")
@@ -132,7 +132,7 @@ class Ui_MainWindow(object):#Anasayfa
 		self.Game1.setStyleSheet("background-color: rgb(85, 255, 127);\n""border-radius: 60px;")
 		self.Game1.setText("")
 		icon2 = QtGui.QIcon()
-		icon2.addPixmap(QtGui.QPixmap("../python arayuz/images/ajan.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+		icon2.addPixmap(QtGui.QPixmap("images/ajan.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
 		self.Game1.setIcon(icon2)
 		self.Game1.setIconSize(QtCore.QSize(220, 210))
 		self.Game1.setShortcut("")
@@ -140,7 +140,7 @@ class Ui_MainWindow(object):#Anasayfa
 		self.Game1.setAutoExclusive(False)
 		self.Game1.setObjectName("Game1")
 		icon3 = QtGui.QIcon()
-		icon3.addPixmap(QtGui.QPixmap("../python arayuz/images/shrek.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+		icon3.addPixmap(QtGui.QPixmap("images/shrek.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
 		self.Game2 = QtWidgets.QPushButton(self.Oyun_Ekran)
 		self.Game2.setGeometry(QtCore.QRect(360, 40, 210, 210))
 		self.Game2.setStyleSheet("background-color: rgb(85, 255, 127);\n""border-radius: 60px;")
@@ -155,7 +155,7 @@ class Ui_MainWindow(object):#Anasayfa
 		self.genel_logo = QtWidgets.QLabel(self.widget)
 		self.genel_logo.setGeometry(QtCore.QRect(50, 30, 240, 210))
 		self.genel_logo.setText("")
-		self.genel_logo.setPixmap(QtGui.QPixmap("../python arayuz/images/Logo.png"))
+		self.genel_logo.setPixmap(QtGui.QPixmap("images/Logo.png"))
 		self.genel_logo.setScaledContents(True)
 		self.genel_logo.setAlignment(QtCore.Qt.AlignCenter)
 		self.genel_logo.setObjectName("genel_logo")

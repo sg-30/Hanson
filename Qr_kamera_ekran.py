@@ -57,7 +57,7 @@ class Qr_kamera(QWidget):
 
     def basarili_okundu(self,basarili):#Qr kod düzgün okunursa başarılı mesajını döndürür
         if basarili=="basarili":
-            self.FeedLabel.setPixmap(QtGui.QPixmap("../python arayuz/images/Baby-Groot-Transparent.png"))
+            self.FeedLabel.setPixmap(QtGui.QPixmap("images/Baby-Groot-Transparent.png"))
     
     def sayfa_degisti(self):
         self.Worker1.okundu=True
